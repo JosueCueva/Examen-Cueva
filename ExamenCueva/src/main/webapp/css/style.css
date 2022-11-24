@@ -1,0 +1,714 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/Lugares/descarga.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20em;
+}
+
+.main{
+	width: 100%;
+}
+
+video{
+    position: relative;
+    height: 650px;
+    width: 540px;
+    object-fit: cover;
+}
+
+/*Inicio Página*/
+.contenedor-inicio{
+	width: 100%;
+}
+
+.cabecera{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow:hidden;
+    transition: all 0.5s ease;
+    height: 100px;
+    z-index: 3;
+}
+
+.cabecera.active{
+    background-color: red;
+}
+
+.scrol{
+    height: 100px;
+}
+
+.logo{
+    width: 20%;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.navegacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.link{
+    color: white;
+    padding: 70px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.link:hover{
+    background-color: black;
+    color: white;
+}
+
+.banner{
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner_textos{
+    width: 20%;
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.banner_textos h1{
+    font-size: 60px;
+    color: white;
+}
+
+.banner_textos p{
+    font-size: 36px;
+    margin:20px 0 75px 0;
+    color: white;
+}
+
+.banner_textos a{
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 50px;
+    color: white;
+}
+
+.banner_img{
+    margin-top: -75px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+}
+
+/*Fin Inicio*/
+
+/*Inicio hoteles*/
+
+.contenedor-hoteles{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.textos{
+    width: 70%;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.textos h2{
+    margin-top: 100px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.textos p{
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.textos a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.img-hoteles{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.foto__img{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    width: 516px;
+    padding-left: 10px;
+}
+
+.foto__img h3{
+    margin: 10px 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.foto__img img{
+    border-radius: 5px;
+    height: 150px;
+    width: 245px;
+}
+
+.foto__img p{
+    font-size: 18px;
+    color: white;
+}
+
+.foto__img ul{
+    font-size: 18px;
+    padding-left: 16px;
+    color: white;
+}
+
+.foto__img li{
+    font-size: 18px;
+    color: white;
+}
+
+.foto__img a{
+    background-color: red;
+    margin: 20px;
+    width: 85%;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+}
+
+.foto__img a:hover{
+    background-color: white;
+    color: red;
+}
+
+/*Fin hoteles*/
+
+/*Inicio Lugares*/
+
+.contenedor-lugares{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-container{
+    max-width: 1890px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.slide-content{
+    margin:0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.image-content,
+.card-content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    width: 500px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px 0 25px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+}
+
+.card-image{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    border-radius: 95px;
+    padding: 3PX;
+    padding: white;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 95px;
+}
+
+.nombre{
+    font-size: 22px;
+    font-weight: 500;
+    color:white;
+    font-weight: bold;
+}
+
+.descripcion{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+}
+
+.button{
+    background-color: red;
+    width: 40%;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 40px;
+    color: white;
+    margin: 25px;
+}
+
+.button:hover{
+    background:red;
+}
+
+.button:hover{
+    background-color: white;
+    color: red;
+}
+
+.texts{
+    width: 70%;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts h2{
+    margin-top: 70px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.texts p{
+    margin-top: 40px;
+    font-size: 25px;
+    color: white;
+}
+
+.swiper-navBtn{
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: red;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: white;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-activate{
+    background-color: red;
+}
+
+@media screen and(max-width: 768px){
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}
+
+/*Fin Lugares*/
+
+/*Inicio Comida*/
+
+.contenedor-comida{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container{
+    margin: 15px;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    width: 1690px;
+    height: 700px;
+}
+
+.flex-container div{
+    margin: 10px;
+    padding: 10px;
+    height: 650px;
+    width: 540px;
+}
+
+.image{
+    position: relative;
+	width: 320px;
+    height: 900px;
+}
+
+.image__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.image__overlay{
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color:#ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+.image__description{
+    font-size: 1.25em;
+    position: absolute;
+    margin-top: 60px;
+    padding: 15px;
+    top: 0;
+}
+
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    padding: 15px;
+}
+
+.image__ingredientes{
+    font-size: 1.25em;
+    position: absolute;
+    margin-top: 300px;
+    padding: 30px;
+    top: 0;
+    left: 0;
+}
+
+.txtcom{
+    width: 70%;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.txtcom h2{
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.txtcom p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/*Fin Comida*/
+
+/*Inicio Mapa*/
+
+.contenedor-mapa{
+	width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container{
+    margin: 15px;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    width: 1690px;
+    height: 700px;
+    justify-content: center;
+}
+
+.flex-container div{
+    margin: 10px;
+    padding: 10px;
+    height: 650px;
+    width: 540px;
+}
+
+.mapa{
+    position: relative;
+	width: 320px;
+    height: 900px;
+}
+
+.mapa__description{
+    font-size: 1.50em;
+    position: absolute;
+    margin-top: 60px;
+    padding: 15px;
+    left: -100px;
+    align-items: center;
+    color: white;
+}
+
+.mapa__title{
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    top: 0;
+    padding: 15px;
+    color: white;
+}
+
+.txtmap{
+    width: 70%;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.txtmap h2{
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.txtmap p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/*Fin Mapa*/
+
+/*Inicio Formulario*/
+
+.contenedor-formulario{
+    max-width: 700px;
+    margin: auto;
+    padding: 3px;
+}
+
+.preguntas{
+    border-radius: 7px;
+    padding: 3px;
+    margin: 10px 0;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+label:hover{
+    background-color:#7fffd4;
+    color: black
+}
+
+.preguntas h3{
+    color: black;
+}
+
+.preguntas h2{
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: red;
+}
+
+#resultado{
+    text-align: center;
+    font-size: 30px;
+    color: darkred;
+}
+
+/*Fin Formulario*/
+
+/*Inicio Pie Página*/
+
+.contenedor-piepagina{
+    width: 100%;
+}
+.pie-pagina{
+    width: 100%;
+}
+.pie-pagina .grupo-1{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 300%;
+    height: 100%;
+}
+.pie-pagina .grupo-2{
+    background-color: red;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/*Fin Pie Página*/
